@@ -5,6 +5,7 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --gpus-per-task=1
 #SBATCH --output=gpujob.output
+
 cd $SLURM_SUBMIT_DIR
 module load nvidia/cuda
 nvcc kernel.cu -o kernel
