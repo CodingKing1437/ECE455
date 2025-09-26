@@ -1,7 +1,7 @@
 #!usr/bin/env zsh
 #SBATCH --partition=instruction
 #SBATCH --time=00:02:00
-#SBATCH --ntask=1
+#SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
 #SBATCH --output=parallel_matmul.output
 
