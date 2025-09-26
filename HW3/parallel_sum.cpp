@@ -1,6 +1,6 @@
-# include <iostream>
-# include <vector>
-# include <omp.h>
+#include <iostream>
+#include <vector>
+#include <omp.h>
 
 int main() {
   const int N = 1000000;
