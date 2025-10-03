@@ -7,5 +7,6 @@
 # SBATCH --output=hello.output
 
 module load nvidia/cuda
+cd $SLURM_SUBMIT_DIR
 nvcc hello.cu -o hello
 ./hello
