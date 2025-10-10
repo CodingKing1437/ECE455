@@ -8,5 +8,5 @@
 
 module load nvidia/cuda
 cd $SLURM_SUBMIT_DIR
-nvcc mm_naive.cu -o mm_coalesced
+nvcc mm_coalesced.cu -o mm_coalesced
 ./mm_coalesced
