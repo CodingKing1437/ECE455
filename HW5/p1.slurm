@@ -8,5 +8,5 @@
 
 module load nvidia/cuda
 cd $SLURM_SUBMIT_DIR
-nvcc mm_naive.cu -o vector_add
+nvcc mm_naive.cu -o mm_naive
 ./mm_naive
