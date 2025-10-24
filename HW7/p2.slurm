@@ -4,9 +4,9 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --gpus-per-task=1
-#SBATCH --output=reduce_naive.output
+#SBATCH --output=reduce_shared.output
 
 cd $SLURM_SUBMIT_DIR
 module load nvidia/cuda
-nvcc reduce_naive.cu -o reduce_naive
-./reduce_naive
+nvcc reduce_shared.cu -o reduce_shared
+./reduce_shared
